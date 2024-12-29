@@ -2741,31 +2741,31 @@
                 <div class="bg section-bg fill bg-fill  bg-loaded"></div>
                 <div class="section-content relative">
                     <div class="row align-center footer-w" id="row-1305604300">
-
-
+                     
+                   
                         <div class="col medium-3 small-12 large-3">
                             <div class="footer-w__item__title ttu">Về Westlife Wedding</div>
                             <ul class="text-footer">
                                 <li>
                                     <strong>
-                                        <a href="https://tonywedding.vn/tony-wedding-studio-chup-anh-cuoi-dep/">Về
+                                        <a href="#">Về
                                             Westlife Wedding</a>
                                     </strong>
                                 </li>
                                 <li>
                                     <strong>
-                                        <a href="https://tonywedding.vn/album/">Các bộ ảnh mẫu</a>
+                                        <a href="#">Các bộ ảnh mẫu</a>
                                     </strong>
                                 </li>
                                 <li>
                                     <strong>
-                                        <a href="https://tonywedding.vn/nhung-cau-hoi-thuong-gap/">Câu hỏi thường
+                                        <a href="#">Câu hỏi thường
                                             gặp</a>
                                     </strong>
                                 </li>
                                 <li>
                                     <strong>
-                                        <a href="https://tonywedding.vn/thong-tin-chu-so-huu-tony-wedding/">Thông
+                                        <a href="#">Thông
                                             tin sở hữu website</a>
                                     </strong>
                                 </li>
@@ -2774,10 +2774,11 @@
                         <div class="col medium-2 small-12 large-3">
                             <div class="col-inner text-center">
                                 <div class="img has-hover x md-x lg-x y md-y lg-y" id="image_274118142">
-                                    <a class="" href="./index.html">
+                                    <a class="" href="#">
                                         <div class="img-inner dark">
                                             <img width="300" height="150"
-                                            src="./logo.jpeg"                                                class="attachment-medium size-medium"
+                                                src="./logo.jpeg"
+                                                class="attachment-medium size-medium"
                                                 alt="Westlife Wedding &#8211; Bình Tĩnh Cưới" decoding="async"
                                                 loading="lazy"
                                                 sizes="(max-width: 300px) 100vw, 300px" data-copyright=""
@@ -2797,23 +2798,7 @@
                                         }
                                     </style>
                                 </div>
-                                <p style="text-align: center;">Theo dõi tại</p>
-                                <p style="text-align: center;">
-                                    <strong>
-                                        <a href="https://www.facebook.com/tonyweddingphoto" target="_blank"
-                                            rel="noopener">Facebook</a>
-                                        |  <a href="https://www.tiktok.com/@tonyweddingphoto" target="_blank"
-                                            rel="noopener">Tiktok</a>
-                                    </strong>
-                                </p>
-                                <p style="text-align: center;">
-                                    <strong>
-                                        <a href="https://www.youtube.com/@tonywedding.binhtinhcuoi" target="_blank"
-                                            rel="noopener">Youtube</a>
-                                        |   <a href="https://www.instagram.com/tonystudiovn/" target="_blank"
-                                            rel="noopener">Instagram</a>
-                                    </strong>
-                                </p>
+                               
                             </div>
                         </div>
                         <div class="col medium-3 small-12 large-3">
@@ -2828,31 +2813,31 @@
                                     <li>
                                         <strong>
                                             <a
-                                                href="https://tonywedding.vn/trang-chu/chinh-sach-giao-nhan-hang-hoa-tony-wedding/">Chính
+                                                href="#">Chính
                                                 sách giao nhận hàng hóa</a>
                                         </strong>
                                     </li>
                                     <li>
                                         <strong>
                                             <a
-                                                href="https://tonywedding.vn/trang-chu/chinh-sach-giao-nhan-hang-hoa-tony-wedding/">Chính
+                                                href="westlife/trang-chu/chinh-sach-giao-nhan-hang-hoa-tony-wedding/">Chính
                                                 sách đổi trả</a>
                                         </strong>
                                     </li>
                                     <li>
                                         <strong>
-                                            <a href="https://tonywedding.vn/chinh-sach-bao-mat-thong-tin/">Chính sách
+                                            <a href="westlife/chinh-sach-bao-mat-thong-tin/">Chính sách
                                                 bảo mật thông tin</a>
                                         </strong>
                                     </li>
                                     <li>
                                         <strong>
-                                            <a href="https://tonywedding.vn/tien-do-va-hinh-thuc-thanh-toan/">Hình thức
+                                            <a href="westlife/tien-do-va-hinh-thuc-thanh-toan/">Hình thức
                                                 thanh toán</a>
                                         </strong>
                                     </li>
                                 </ul>
-
+                             
                             </div>
                         </div>
                     </div>
@@ -3493,6 +3478,21 @@
         }
         /* ]]> */
     </script>
+        <script>
+            const links = document.querySelectorAll("a");
+          
+            links.forEach(link => {
+              link.addEventListener("click", function(event) {
+                if (this.href.includes("westlife")) {
+                  event.preventDefault();
+                  console.log("Đường dẫn chứa abc123, không chuyển hướng.", this.href);
+                  // Thực hiện các hành động khác ở đây nếu cần
+                } else {
+                  console.log("Đường dẫn không chứa abc123, cho phép chuyển hướng.", this.href);
+                }
+              });
+            });
+          </script>
 </body>
 
 </html>
